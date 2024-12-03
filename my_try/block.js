@@ -33,7 +33,7 @@ class Block {
                 this.angle += this.speed;
             }
         }
-        // if the blcok is already roating, keep it rotating until angle = 90
+        // if the block is already rotating, keep it rotating until angle = 90
         if (this.angle > 0 && this.angle < 90) {
             this.angle += this.speed;
         } else {
@@ -48,11 +48,11 @@ class Block {
         circle(0, 0, size - gap);
     }
 
-    drawX() {
-        let margin = -size / 2;
-        line(margin + gap/2, margin + gap/2, size + margin - gap/2, size + margin - gap/2);
-        line(size + margin - gap/2, margin + gap/2, margin + gap/2, size + margin - gap/2);
-    }
+    // drawX() {
+    //     let margin = -size / 2;
+    //     line(margin + gap/2, margin + gap/2, size + margin - gap/2, size + margin - gap/2);
+    //     line(size + margin - gap/2, margin + gap/2, margin + gap/2, size + margin - gap/2);
+    // }
 
     drawPlus() {
         let margin = -size / 2;
