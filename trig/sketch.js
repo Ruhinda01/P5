@@ -1,5 +1,5 @@
 
-let x; let y; let r = 150; let angle = 0;
+let x; let y; let r = 160; let angle = 0;
 let shiftingAngle = [];
 let numAxis = 8;
 let x2 = []; let y2 = [];
@@ -16,7 +16,7 @@ function setup() {
 function draw() {
   background(48, 102, 190);
   stroke(255, 100);
-  // angle = map(mouseX, 0, width, 0, 360);
+  // angle = map(mouseX, 0, width, 0, 360); // this is good for testing movement based on the mouse position
   x = r*cos(angle);
   y = r*sin(angle);
 
@@ -35,8 +35,9 @@ function draw() {
     line(-r, 0, r, 0);
     line(0, -r, 0, r);
     fill(255);
-    ellipse(x2[i], 0, 20, 20);
-    ellipse(0, y2[i], 20, 20);
+    // noFill();
+    circle(x2[i], 0, 20);
+    circle(0, y2[i], 20);
     pop();
   }
 
